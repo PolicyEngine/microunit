@@ -1,8 +1,8 @@
 # microunit
 
-`microunit` is Cosilico's unit-assignment package for microdata.
+`microunit` is PolicyEngine's unit-assignment package for microdata.
 
-It is part of the Cosilico microdata stack:
+It is part of the PolicyEngine microdata stack:
 
 - `microimpute`: fill missing variables and transfer attributes across data
   sources.
