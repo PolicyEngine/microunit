@@ -32,7 +32,9 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "numpy>=1.24",
     "pandas>=2.0",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
@@ -46,6 +48,16 @@ Repository = "https://github.com/PolicyEngine/microunit"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/microunit"]
+# Ship packaged rule data (the qualifying-relative gross income limit YAML)
+# alongside the Python modules.
+artifacts = ["src/microunit/data/*.yaml"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/microunit",
+    "tests",
+    "README.md",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
