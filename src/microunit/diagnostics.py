@@ -32,7 +32,9 @@ class PartitionMatchReport:
         return self.persons_in_matched_groups / self.person_count
 
 
-def _signature(person_id: pd.Series, unit_id: pd.Series) -> frozenset[frozenset[Hashable]]:
+def _signature(
+    person_id: pd.Series, unit_id: pd.Series
+) -> frozenset[frozenset[Hashable]]:
     frame = pd.DataFrame({"person_id": person_id, "unit_id": unit_id})
     return frozenset(
         frozenset(group["person_id"].tolist())

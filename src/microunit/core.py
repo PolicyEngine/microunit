@@ -36,7 +36,9 @@ class UnitPartition:
             raise ValueError("unit_id cannot contain missing values")
         if person_id.duplicated().any():
             duplicates = person_id[person_id.duplicated()].unique().tolist()
-            raise ValueError(f"person_id must be unique, found duplicates: {duplicates}")
+            raise ValueError(
+                f"person_id must be unique, found duplicates: {duplicates}"
+            )
 
         object.__setattr__(self, "person_id", person_id.reset_index(drop=True))
         object.__setattr__(self, "unit_id", unit_id.reset_index(drop=True))
@@ -162,7 +164,9 @@ class EgoUnitMembership:
             for member in members:
                 focal_ids.append(focal)
                 member_ids.append(member)
-        return cls(unit_type, pd.Series(focal_ids), pd.Series(member_ids), source=source)
+        return cls(
+            unit_type, pd.Series(focal_ids), pd.Series(member_ids), source=source
+        )
 
     def to_frame(self) -> pd.DataFrame:
         """Return membership rows keyed by focal person and member person."""
