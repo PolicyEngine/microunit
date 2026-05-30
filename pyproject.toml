@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "microunit"
 # Base version; CI (.github/workflows/versioning.yaml) bumps this from the
 # changelog.d fragments on merge to main, so the first release publishes 0.1.0.
-version = "0.0.0"
+version = "0.1.0"
 description = "Policy unit assignment for PolicyEngine's microdata stack"
 readme = "README.md"
 license = "MIT"
