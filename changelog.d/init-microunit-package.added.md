@@ -1,0 +1,1 @@
+Initial release. Rules-based tax-unit construction engine (`construct_tax_units`, `policyengine` and `census_documented` modes) extracted from policyengine-us-data, conservative SPM/SNAP/Medicaid-MAGI unit adapters, partition primitives (`UnitPartition`, `EgoUnitMembership`), and partition-match diagnostics.
