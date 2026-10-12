@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- towncrier release notes start -->
 
+## [0.1.1] - 2026-10-12
+
+### Changed
+
+- Publish to PyPI with trusted publishing (OIDC) instead of a stored API token.
+
+
 ## [0.1.0] - 2026-05-30
 
 ### Added
