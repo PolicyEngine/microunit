@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- towncrier release notes start -->
 
+## [0.1.2] - 2026-11-16
+
+### Changed
+
+- Test Python 3.15 while requiring Python 3.11 or later.
+
+
 ## [0.1.1] - 2026-10-12
 
 ### Changed
